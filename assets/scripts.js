@@ -4,7 +4,7 @@ const imageCountInAssetsBg = 50;
 // populate urls automagically
 const images = new Array();
 for (let i = 1; i <= imageCountInAssetsBg; i++) {
-  images.push(`/assets/bg/${String(i).padStart(3, '0')}.jpg`);
+  images.push(`./assets/bg/${String(i).padStart(3, '0')}.jpg`);
 }
 
 // grab the splash element
