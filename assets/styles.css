@@ -45,13 +45,21 @@ h1 {
   font-size: 80px;
   font-weight: 700;
   line-height: 100px;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 p {
   font-size: 32px;
   line-height: 40px;
   font-weight: 300;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(calc(-100% - 50px), -50%);
+  width: 600px;
 }
 
 #social {
@@ -88,7 +96,7 @@ h2 {
   font-size: 60px;
   font-weight: 700;
   line-height: 80px;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 a,
@@ -101,4 +109,32 @@ a:visited {
 a:hover,
 a:focus {
   color: #ffe600;
+}
+
+@media only screen and (max-width: 1080px) {
+  #header-box {
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  #logo {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, calc(-100% - 40px));
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  #where-box {
+    transform: translate(-50%, -50%);
+    width: 80%;
+    top: 25%;
+    right: unset;
+    left: 50%;
+  }
 }
