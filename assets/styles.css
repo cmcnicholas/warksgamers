@@ -39,6 +39,15 @@ body {
   left: 50%;
   transform: translate(0, -50%);
   width: 40%;
+
+  transition: background-color 250ms ease-in-out;
+}
+
+#header-box:hover,
+#header-box:focus,
+#header-box:focus-within,
+#header-box:active {
+  background: #202020c4;
 }
 
 h1 {
@@ -90,6 +99,15 @@ p {
   right: 50%;
   transform: translate(0, -50%);
   width: 40%;
+
+  transition: background-color 250ms ease-in-out;
+}
+
+#where-box:hover,
+#where-box:focus,
+#where-box:focus-within,
+#where-box:active {
+  background: #202020c4;
 }
 
 h2 {
@@ -115,6 +133,7 @@ a:focus {
   #header-box {
     transform: translate(-50%, -50%);
     width: 80%;
+    background: #202020c4;
   }
 
   h1 {
@@ -136,5 +155,6 @@ a:focus {
     top: 25%;
     right: unset;
     left: 50%;
+    background: #202020c4;
   }
 }
