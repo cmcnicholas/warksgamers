@@ -31,7 +31,7 @@ body {
 }
 
 #header-box {
-  padding: 20px;
+  padding: 20px 30px 30px;
   background: #20202054;
   color: white;
   position: absolute;
@@ -91,8 +91,8 @@ p {
 }
 
 #where-box {
-  padding: 20px;
-  background: #20202054;
+  padding: 20px 30px 30px;
+  background: #202020c4;
   color: white;
   position: absolute;
   top: 50%;
@@ -101,39 +101,29 @@ p {
   width: 40%;
 
   transition: background-color 250ms ease-in-out;
-}
-
-#where-box:hover,
-#where-box:focus,
-#where-box:focus-within,
-#where-box:active {
-  background: #202020c4;
 }
 
 #what {
   width: 100%;
   height: 100%;
   position: relative;
+  background-image: url(./what.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #what-box {
-  padding: 20px;
-  background: #20202054;
+  padding: 20px 30px 30px;
+  background: #202020c4;
   color: white;
   position: absolute;
   top: 50%;
-  right: 50%;
-  transform: translate(0, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40%;
 
   transition: background-color 250ms ease-in-out;
-}
-
-#what-box:hover,
-#what-box:focus,
-#what-box:focus-within,
-#what-box:active {
-  background: #202020c4;
 }
 
 h2 {
