@@ -31,7 +31,7 @@ body {
 }
 
 #header-box {
-  padding: 20px;
+  padding: 20px 30px 30px;
   background: #20202054;
   color: white;
   position: absolute;
@@ -91,8 +91,8 @@ p {
 }
 
 #where-box {
-  padding: 20px;
-  background: #20202054;
+  padding: 20px 30px 30px;
+  background: #202020c4;
   color: white;
   position: absolute;
   top: 50%;
@@ -103,11 +103,27 @@ p {
   transition: background-color 250ms ease-in-out;
 }
 
-#where-box:hover,
-#where-box:focus,
-#where-box:focus-within,
-#where-box:active {
+#what {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url(./what.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#what-box {
+  padding: 20px 30px 30px;
   background: #202020c4;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+
+  transition: background-color 250ms ease-in-out;
 }
 
 h2 {
@@ -127,6 +143,17 @@ a:visited {
 a:hover,
 a:focus {
   color: #ffe600;
+}
+
+h2 a,
+h2 a:active,
+h2 a:visited {
+  color: white;
+}
+
+h2 a:hover,
+h2 a:focus {
+  color: #e9e9e9;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -153,6 +180,14 @@ a:focus {
     transform: translate(-50%, -50%);
     width: 80%;
     top: 25%;
+    right: unset;
+    left: 50%;
+    background: #202020c4;
+  }
+
+  #what-box {
+    transform: translate(-50%, -50%);
+    width: 80%;
     right: unset;
     left: 50%;
     background: #202020c4;
