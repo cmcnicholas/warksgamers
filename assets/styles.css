@@ -84,6 +84,11 @@ p {
 #social-discord {
 }
 
+#social-discord img {
+  width: 110px;
+  height: 144px;
+}
+
 #where {
   width: 100%;
   height: 100%;
